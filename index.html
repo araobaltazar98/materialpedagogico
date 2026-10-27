@@ -3,266 +3,408 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Combo EducaPrática — 300+ atividades de alfabetização em PDF</title>
-<meta name="description" content="Coordenação motora, escrita cursiva, sílabas e produção de frases em 5 apostilas prontas para imprimir. R$ 9,90.">
+<title>Combo EducaPrática — 300+ atividades de alfabetização prontas para imprimir</title>
+<meta name="description" content="5 apostilas em PDF: coordenação motora, silabário cursivo, frases cursivas e produção de frases. Mais de 300 atividades prontas para imprimir, a partir de R$ 9,90.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Combo EducaPrática — atividades de alfabetização">
-<meta property="og:description" content="5 apostilas em PDF com mais de 300 atividades para imprimir, por R$ 9,90.">
-<meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/lovp_5n8fyg31m78cqv4fy7tsq0gske/b131587b43d6aa3f4c60ae3af085e4b2_1793104726834.png">
+<meta property="og:title" content="Combo EducaPrática — 300+ atividades de alfabetização">
+<meta property="og:description" content="5 apostilas em PDF prontas para imprimir, a partir de R$ 9,90.">
+<meta property="og:image" content="https://materialpedagogico.vercel.app/assets/capa-caderno-pratico.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#fffaf2; --surface:#ffffff; --ink:#1f2a37; --muted:#5b6675;
-    --primary:#1f8a5b; --primary-dark:#176c47; --accent:#ffc83d; --accent-soft:#fff3cf;
-    --line:#ece3d3; --radius:18px; --shadow:0 10px 30px rgba(31,42,55,.08);
+    --bg:#fffaf2; --surface:#fff; --ink:#1f2a37; --muted:#5b6675;
+    --primary:#1f8a5b; --primary-dark:#176c47; --primary-soft:#e5f5ec;
+    --accent:#ffc83d; --accent-soft:#fff3cf; --accent-ink:#8a5d00;
+    --red:#e04a3f; --line:#ece3d3; --radius:20px; --shadow:0 10px 30px rgba(31,42,55,.08);
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
-  body{font-family:"Nunito",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
-  img{max-width:100%;display:block}
+  body{font-family:"Nunito",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;height:auto;display:block}
   .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
-  section{padding:64px 0}
-  h1{font-size:clamp(1.9rem,4.6vw,3rem);line-height:1.15;font-weight:900;letter-spacing:-.02em}
-  h2{font-size:clamp(1.5rem,3.4vw,2.2rem);line-height:1.2;font-weight:900;text-align:center;margin-bottom:36px;letter-spacing:-.01em}
-  h3{font-size:1.15rem;font-weight:800}
-  .demo-bar{background:var(--ink);color:#fff;text-align:center;font-size:.85rem;padding:8px 16px}
-  .eyebrow{display:inline-block;background:var(--accent-soft);color:#8a5d00;font-weight:800;font-size:.78rem;letter-spacing:.08em;padding:6px 12px;border-radius:999px;margin-bottom:18px}
-  .btn{display:inline-block;background:var(--primary);color:#fff;text-decoration:none;font-weight:900;font-size:1.05rem;padding:18px 30px;border-radius:14px;border:0;cursor:pointer;box-shadow:0 8px 0 var(--primary-dark);transition:transform .12s,box-shadow .12s;text-align:center}
-  .btn:hover{transform:translateY(2px);box-shadow:0 6px 0 var(--primary-dark)}
-  .btn:active{transform:translateY(6px);box-shadow:0 2px 0 var(--primary-dark)}
-  .btn.block{display:block;width:100%}
-
-  /* Hero */
-  .hero{padding:56px 0 64px}
-  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
-  .hero p.lead{font-size:1.15rem;color:var(--muted);margin:18px 0 26px}
-  .price{font-size:2.6rem;font-weight:900;color:var(--primary)}
-  .price-note{color:var(--muted);font-size:.92rem;margin-bottom:24px}
-  .hero-img{background:var(--surface);border-radius:24px;padding:14px;box-shadow:var(--shadow)}
-  .hero-img img{border-radius:14px}
-  .caption{font-size:.78rem;color:var(--muted);text-align:center;margin-top:8px}
-
-  /* Apostilas */
-  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:18px}
-  .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
-  .preview{aspect-ratio:3/4;border-radius:12px;background:repeating-linear-gradient(45deg,#f7efe0,#f7efe0 10px,#fbf5ea 10px,#fbf5ea 20px);display:flex;align-items:center;justify-content:center;text-align:center;color:var(--muted);font-size:.85rem;font-weight:700;padding:12px;margin-bottom:14px}
-  .card p{color:var(--muted);font-size:.95rem;margin-top:4px}
-  .cover{aspect-ratio:73/180;border-radius:12px;margin-bottom:14px;overflow:hidden;box-shadow:0 6px 16px rgba(31,42,55,.12)}
-  .cover img{width:100%;height:100%;object-fit:cover}
-  .featured{display:grid;grid-template-columns:240px 1fr;gap:28px;align-items:center;max-width:720px;margin:0 auto 22px}
-  .featured h3{font-size:1.4rem}
-  .featured p{font-size:1.05rem}
-  .cover-wide{border-radius:12px;overflow:hidden;box-shadow:0 6px 16px rgba(31,42,55,.12)}
-  .cover-wide img{width:100%;height:auto}
-  .cards{grid-template-columns:repeat(4,1fr)!important}
-  .card .preview{aspect-ratio:73/180}
-
-  /* Benefícios */
+  section{padding:72px 0}
+  h1,h2{font-family:"Baloo 2","Nunito",sans-serif;letter-spacing:-.01em}
+  h1{font-size:clamp(2rem,5vw,3.3rem);line-height:1.08;font-weight:800}
+  h2{font-size:clamp(1.6rem,3.6vw,2.4rem);line-height:1.12;font-weight:800;text-align:center;margin-bottom:14px}
+  h3{font-size:1.12rem;font-weight:800;line-height:1.3}
+  .hl{color:var(--primary)}
+  .kicker{display:block;text-align:center;font-weight:900;font-size:.78rem;letter-spacing:.12em;color:var(--accent-ink);margin-bottom:10px;text-transform:uppercase}
+  .sub{text-align:center;color:var(--muted);font-size:1.08rem;max-width:640px;margin:0 auto 40px}
   .alt{background:var(--surface)}
-  .benefits{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;max-width:880px;margin:0 auto}
-  .benefit{display:flex;gap:12px;align-items:flex-start;background:var(--bg);border-radius:14px;padding:16px 18px;font-weight:700}
-  .check{flex:none;width:26px;height:26px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-size:.9rem}
 
-  /* Por dentro */
-  .inside{max-width:760px;margin:0 auto;text-align:center}
-  .inside .frame{position:relative;border-radius:22px;overflow:hidden;box-shadow:var(--shadow);margin-bottom:28px}
-  .inside .badge{position:absolute;inset:auto 0 0 0;background:rgba(31,42,55,.78);color:#fff;font-weight:800;padding:12px}
+  .demo-bar{background:var(--ink);color:#fff;text-align:center;font-size:.82rem;padding:7px 16px}
+  .topbar{background:var(--accent);color:var(--ink);text-align:center;font-weight:900;font-size:.85rem;padding:9px 16px;letter-spacing:.02em}
 
-  /* Oferta */
-  .offer{max-width:640px;margin:0 auto;background:var(--surface);border:2px solid var(--primary);border-radius:26px;padding:32px;box-shadow:var(--shadow)}
-  .offer ul{list-style:none;margin:6px 0 18px}
-  .offer li{padding:8px 0;border-bottom:1px dashed var(--line);display:flex;gap:10px;font-weight:700}
-  .offer li::before{content:"✓";color:var(--primary);font-weight:900}
-  .offer .center{text-align:center}
-  .offer .muted{color:var(--muted)}
-  .offer .big{font-size:2.8rem;font-weight:900;color:var(--primary);text-align:center;margin:10px 0 26px}
-  .bumps h3{margin-bottom:4px}
-  .bumps .small{color:var(--muted);font-size:.9rem;margin-bottom:14px}
-  .bump{display:block;border:2px dashed #e0b33a;background:var(--accent-soft);border-radius:14px;padding:14px 16px;margin-bottom:12px;cursor:pointer}
-  .bump-head{display:flex;justify-content:space-between;align-items:center;gap:10px;font-weight:900}
-  .bump-head .tag{font-size:.7rem;background:#fff;border:1px solid #e0b33a;color:#8a5d00;padding:2px 8px;border-radius:999px;font-weight:800;white-space:nowrap}
-  .bump input{margin-right:8px;transform:scale(1.25);accent-color:var(--primary)}
-  .bump p{font-size:.92rem;margin-top:6px}
-  .bump .desc{color:var(--muted);font-size:.85rem}
-  .summary{background:var(--bg);border-radius:14px;padding:16px 18px;margin:20px 0}
-  .summary h3{margin-bottom:8px}
-  .row{display:flex;justify-content:space-between;padding:4px 0;font-size:.95rem}
-  .row.total{border-top:1px solid var(--line);margin-top:8px;padding-top:10px;font-weight:900;font-size:1.15rem}
-  .foot-note{text-align:center;color:var(--muted);font-size:.85rem;margin-top:12px}
+  .btn{display:inline-block;background:var(--primary);color:#fff;text-decoration:none;font-weight:900;font-size:1.08rem;padding:19px 32px;border-radius:16px;border:0;cursor:pointer;box-shadow:0 7px 0 var(--primary-dark);transition:transform .12s,box-shadow .12s;text-align:center;line-height:1.2}
+  .btn:hover{transform:translateY(2px);box-shadow:0 5px 0 var(--primary-dark)}
+  .btn:active{transform:translateY(6px);box-shadow:0 1px 0 var(--primary-dark)}
+  .btn.block{display:block;width:100%}
+  .btn.ghost{background:#fff;color:var(--primary);border:2px solid var(--primary);box-shadow:0 5px 0 var(--primary-soft)}
+  .trust{display:flex;flex-wrap:wrap;gap:6px 18px;justify-content:center;color:var(--muted);font-size:.86rem;font-weight:700;margin-top:16px}
+  .trust span::before{content:"✓ ";color:var(--primary);font-weight:900}
+
+  /* HERO */
+  .hero{padding:44px 0 64px;text-align:center;overflow:hidden}
+  .hero .lead{font-size:1.15rem;color:var(--muted);max-width:620px;margin:16px auto 0}
+  .fan{position:relative;height:400px;max-width:760px;margin:30px auto 8px}
+  .fan img{position:absolute;bottom:0;left:50%;border-radius:12px;box-shadow:0 18px 40px rgba(31,42,55,.22);border:4px solid #fff}
+  .fan .t{width:132px;height:326px;object-fit:cover}
+  .fan .c{width:228px;height:332px;object-fit:cover;z-index:5;transform:translateX(-50%)}
+  .fan .t1{transform:translateX(-238%) rotate(-12deg);z-index:1}
+  .fan .t2{transform:translateX(-148%) rotate(-6deg) translateY(-14px);z-index:3}
+  .fan .t3{transform:translateX(48%) rotate(6deg) translateY(-14px);z-index:3}
+  .fan .t4{transform:translateX(138%) rotate(12deg);z-index:1}
+  .badge-qty{position:absolute;z-index:6;right:4%;top:6%;width:104px;height:104px;border-radius:50%;background:var(--red);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:900;line-height:1;transform:rotate(10deg);box-shadow:0 8px 20px rgba(224,74,63,.35)}
+  .badge-qty b{font-family:"Baloo 2";font-size:2rem}
+  .badge-qty small{font-size:.72rem;margin-top:2px}
+  .hero-price{margin:18px 0 18px;color:var(--muted);font-weight:700}
+  .hero-price strong{font-family:"Baloo 2";font-size:2.4rem;color:var(--primary);vertical-align:middle;margin-left:4px}
+
+  /* OBJEÇÕES */
+  .objs{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;max-width:920px;margin:0 auto}
+  .obj{background:var(--bg);border-radius:18px;padding:20px 22px;border:1px solid var(--line)}
+  .obj q{display:block;font-weight:900;font-size:1.05rem;quotes:"“" "”"}
+  .obj p{color:var(--muted);margin-top:6px;padding-left:26px;position:relative}
+  .obj p::before{content:"✓";position:absolute;left:0;top:0;color:var(--primary);font-weight:900}
+
+  /* PARA QUEM */
+  .chips{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;max-width:760px;margin:0 auto}
+  .chip{background:#fff;border:1px solid var(--line);border-radius:999px;padding:10px 18px;font-weight:800;box-shadow:var(--shadow)}
+
+  /* TRILHA */
+  .trail{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:etapa}
+  .step{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);position:relative}
+  .step::before{counter-increment:etapa;content:"Etapa " counter(etapa);position:absolute;top:-12px;left:16px;background:var(--accent);color:var(--ink);font-weight:900;font-size:.75rem;padding:3px 10px;border-radius:999px}
+  .step img{width:100%;height:auto;aspect-ratio:73/180;object-fit:cover;border-radius:12px;margin-bottom:12px}
+  .step p{color:var(--muted);font-size:.93rem;margin-top:4px}
+  .support{display:grid;grid-template-columns:200px 1fr;gap:26px;align-items:center;max-width:760px;margin:30px auto 0;background:var(--accent-soft);border:2px dashed #e0b33a;border-radius:var(--radius);padding:20px}
+  .support img{border-radius:12px;box-shadow:var(--shadow)}
+  .support .tag{display:inline-block;background:#fff;color:var(--accent-ink);font-weight:900;font-size:.75rem;padding:3px 10px;border-radius:999px;margin-bottom:8px;border:1px solid #e0b33a}
+  .support p{color:var(--muted);margin-top:6px}
+
+  /* CONTA */
+  .math{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;max-width:820px;margin:0 auto;text-align:center}
+  .math div{background:var(--surface);border-radius:var(--radius);padding:26px 16px;box-shadow:var(--shadow)}
+  .math b{display:block;font-family:"Baloo 2";font-size:2.4rem;line-height:1;color:var(--primary)}
+  .math span{color:var(--muted);font-weight:700;font-size:.95rem}
+  .note{text-align:center;color:var(--muted);font-size:.82rem;margin-top:14px}
+
+  /* COMPARAÇÃO */
+  .vs{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:880px;margin:0 auto}
+  .vs > div{border-radius:var(--radius);padding:26px}
+  .vs .bad{background:#fdeeee;border:1px solid #f3cfcc}
+  .vs .good{background:var(--primary-soft);border:2px solid var(--primary)}
+  .vs h3{margin-bottom:12px}
+  .vs ul{list-style:none}
+  .vs li{padding:8px 0 8px 30px;position:relative;font-weight:700;border-top:1px solid rgba(31,42,55,.06)}
+  .vs .bad li::before{content:"✕";position:absolute;left:4px;color:var(--red);font-weight:900}
+  .vs .good li::before{content:"✓";position:absolute;left:4px;color:var(--primary);font-weight:900}
+
+  /* PLANOS */
+  .plans{display:grid;grid-template-columns:1fr 1.08fr;gap:22px;max-width:900px;margin:0 auto;align-items:start}
+  .plan{background:var(--surface);border:1px solid var(--line);border-radius:26px;padding:28px;box-shadow:var(--shadow);position:relative}
+  .plan.best{border:3px solid var(--primary);box-shadow:0 18px 44px rgba(31,138,91,.18)}
+  .ribbon{position:absolute;top:-15px;left:50%;transform:translateX(-50%);background:var(--primary);color:#fff;font-weight:900;font-size:.8rem;letter-spacing:.06em;padding:6px 16px;border-radius:999px;white-space:nowrap}
+  .plan .name{font-weight:900;letter-spacing:.08em;font-size:.85rem;color:var(--muted);text-align:center}
+  .plan .price{font-family:"Baloo 2";font-size:3.2rem;font-weight:800;line-height:1;text-align:center;color:var(--ink);margin:10px 0 2px}
+  .plan.best .price{color:var(--primary)}
+  .plan .once{text-align:center;color:var(--muted);font-size:.88rem;margin-bottom:6px}
+  .save{display:block;width:max-content;margin:6px auto 0;background:var(--accent-soft);color:var(--accent-ink);font-weight:900;font-size:.82rem;padding:4px 12px;border-radius:999px}
+  .plan ul{list-style:none;margin:20px 0 22px}
+  .plan li{padding:8px 0 8px 28px;position:relative;border-top:1px dashed var(--line);font-weight:700;font-size:.97rem}
+  .plan li::before{content:"✓";position:absolute;left:2px;color:var(--primary);font-weight:900}
+  .plan li.off{color:#a7afba;font-weight:600;text-decoration:line-through}
+  .plan li.off::before{content:"✕";color:#c6ccd4}
+  .plan li.extra{background:var(--accent-soft);border-top:0;border-radius:10px;margin-top:4px;padding-left:34px}
+  .plan li.extra::before{content:"🎁";left:8px}
+  .plan li small{display:block;color:var(--muted);font-weight:600;font-size:.82rem}
+  .plan-trust{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;color:var(--muted);font-size:.8rem;font-weight:700;margin-top:12px}
+
+  .guarantee{display:flex;gap:20px;align-items:center;max-width:720px;margin:34px auto 0;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;box-shadow:var(--shadow)}
+  .seal{flex:none;width:86px;height:86px;border-radius:50%;background:var(--primary);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:900;line-height:1;border:4px dashed #fff;outline:3px solid var(--primary)}
+  .seal b{font-family:"Baloo 2";font-size:2rem}
+  .seal small{font-size:.65rem;letter-spacing:.06em}
+  .guarantee p{color:var(--muted);margin-top:4px}
+
+  /* COMO FUNCIONA */
+  .how{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:900px;margin:0 auto}
+  .how div{background:var(--bg);border-radius:var(--radius);padding:22px;text-align:center}
+  .how .n{width:44px;height:44px;border-radius:50%;background:var(--accent);font-family:"Baloo 2";font-weight:800;font-size:1.3rem;display:flex;align-items:center;justify-content:center;margin:0 auto 12px}
+  .how p{color:var(--muted);font-size:.95rem;margin-top:4px}
 
   /* FAQ */
   .faq{max-width:760px;margin:0 auto}
-  details{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:4px 20px;margin-bottom:12px}
-  summary{cursor:pointer;font-weight:800;padding:14px 0;list-style:none;display:flex;justify-content:space-between;gap:12px}
+  details{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:4px 20px;margin-bottom:12px}
+  summary{cursor:pointer;font-weight:800;padding:15px 0;list-style:none;display:flex;justify-content:space-between;gap:12px}
   summary::-webkit-details-marker{display:none}
   summary::after{content:"+";font-weight:900;color:var(--primary);font-size:1.3rem;line-height:1}
   details[open] summary::after{content:"–"}
   details p{color:var(--muted);padding-bottom:16px}
 
-  footer{background:var(--ink);color:#cfd6df;padding:36px 0;text-align:center;font-size:.88rem}
+  /* CTA FINAL */
+  .final{background:var(--primary);color:#fff;text-align:center}
+  .final h2{color:#fff}
+  .final .sub{color:#d6efe2}
+  .final .btn{background:var(--accent);color:var(--ink);box-shadow:0 7px 0 #c99a1f}
+  .final .trust{color:#d6efe2}
+  .final .trust span::before{color:var(--accent)}
+
+  footer{background:var(--ink);color:#cfd6df;padding:36px 0 96px;text-align:center;font-size:.86rem}
   footer strong{color:#fff;font-size:1.1rem;display:block;margin-bottom:8px}
   footer .links{margin-top:10px;display:flex;flex-wrap:wrap;gap:6px 18px;justify-content:center}
   footer a{color:#cfd6df}
+  footer .legal{max-width:640px;margin:14px auto 0;font-size:.78rem;color:#9aa5b1}
 
-  @media (max-width:820px){
-    .hero-grid{grid-template-columns:1fr;gap:32px}
-    .hero{text-align:center}
-    section{padding:48px 0}
-    .offer{padding:22px}
+  /* CTA fixo no celular */
+  .sticky{position:fixed;left:0;right:0;bottom:0;z-index:50;background:#fff;border-top:1px solid var(--line);padding:10px 14px calc(10px + env(safe-area-inset-bottom));display:none;align-items:center;gap:12px;box-shadow:0 -8px 24px rgba(31,42,55,.1);transform:translateY(110%);transition:transform .25s}
+  .sticky.show{transform:none}
+  .sticky .p{font-size:.78rem;color:var(--muted);line-height:1.2}
+  .sticky .p b{display:block;font-family:"Baloo 2";font-size:1.3rem;color:var(--primary)}
+  .sticky .btn{flex:1;padding:14px 12px;font-size:.98rem;box-shadow:0 4px 0 var(--primary-dark)}
+
+  @media (max-width:860px){
+    .trail{grid-template-columns:repeat(2,1fr);gap:22px 14px}
+    .plans{grid-template-columns:1fr}
+    .plan.best{order:-1}
+    .how{grid-template-columns:1fr}
   }
-  @media (max-width:560px){
-    .cards{grid-template-columns:repeat(2,1fr)!important;gap:12px}
-    .featured{grid-template-columns:1fr;gap:12px;text-align:center}
-    .featured h3{font-size:1.15rem}
-    .featured p{font-size:.95rem}
-    .card{padding:10px}
-    .card h3{font-size:1rem}
-    .card p{font-size:.85rem}
+  @media (max-width:640px){
+    section{padding:52px 0}
+    .hero{padding:30px 0 44px}
+    .fan{height:250px;margin-top:22px}
+    .fan .t{width:82px;height:202px}
+    .fan .c{width:142px;height:207px}
+    .fan .t1{transform:translateX(-215%) rotate(-12deg)}
+    .fan .t2{transform:translateX(-135%) rotate(-6deg) translateY(-8px)}
+    .fan .t3{transform:translateX(35%) rotate(6deg) translateY(-8px)}
+    .fan .t4{transform:translateX(115%) rotate(12deg)}
+    .badge-qty{width:76px;height:76px;right:0;top:0}
+    .badge-qty b{font-size:1.45rem}
+    .badge-qty small{font-size:.6rem}
+    .math{grid-template-columns:1fr}
+    .vs{grid-template-columns:1fr}
+    .support{grid-template-columns:110px 1fr;gap:14px;padding:14px}
+    .step{padding:10px}
+    .step p{font-size:.85rem}
+    .plan{padding:24px 18px}
+    .guarantee{flex-direction:column;text-align:center}
+    .sticky{display:flex}
   }
 </style>
 </head>
 <body>
 
 <div class="demo-bar">Modo de demonstração — o checkout ainda não está conectado.</div>
+<div class="topbar">📚 5 APOSTILAS EM PDF · ACESSO IMEDIATO</div>
 
-<!-- HERO -->
+<!-- 1. HERO: promessa + prova visual + preço + CTA -->
 <header class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <span class="eyebrow">MATERIAL PEDAGÓGICO EM PDF</span>
-      <h1>Mais de 300 atividades para tornar a alfabetização mais prática e organizada</h1>
-      <p class="lead">Tenha atividades de coordenação motora, escrita cursiva, sílabas e produção de frases reunidas em um único combo, prontas para imprimir.</p>
-      <div class="price">R$ 9,90</div>
-      <p class="price-note">Pagamento único. Arquivos digitais em PDF.</p>
-      <a href="#oferta" class="btn">QUERO MEU COMBO POR R$ 9,90</a>
+  <div class="wrap">
+    <h1>Mais de <span class="hl">300 atividades de alfabetização</span> prontas para imprimir</h1>
+    <p class="lead">Do primeiro traçado à produção de frases, em 5 apostilas organizadas. Chega de perder horas procurando atividade solta na internet.</p>
+
+    <div class="fan" aria-label="Capas das 5 apostilas do combo">
+      <img class="t t1" src="assets/capa-coordenacao-motora.jpg" alt="Capa Coordenação Motora" width="365" height="900">
+      <img class="t t2" src="assets/capa-silabario-cursivo.jpg" alt="Capa Silabário Cursivo" width="365" height="900">
+      <img class="t t3" src="assets/capa-frases-cursivas.jpg" alt="Capa Frases Cursivas" width="365" height="900">
+      <img class="t t4" src="assets/capa-producao-de-frases.jpg" alt="Capa Produção de Frases" width="365" height="900">
+      <img class="c" src="assets/capa-caderno-pratico.jpg" alt="Capa Caderno Prático" width="640" height="933">
+      <div class="badge-qty"><b>300+</b><small>atividades</small></div>
     </div>
-    <div>
-      <div class="hero-img">
-        <!-- Substitua pelo arquivo local: assets/combo-mockup.jpg -->
-        <img src="https://screenshot-to-spark-2000.lovable.app/assets/combo-mockup-C4wPHCyx.jpg" alt="Ilustração das cinco apostilas do combo (imagem ilustrativa)" width="800" height="800">
-      </div>
-      <p class="caption">Imagem ilustrativa</p>
-    </div>
+
+    <p class="hero-price">A partir de <strong>R$ 9,90</strong></p>
+    <a href="#planos" class="btn">QUERO MINHAS 5 APOSTILAS</a>
+    <div class="trust"><span>Pagamento único</span><span>Acesso imediato</span><span>Garantia de 7 dias</span></div>
   </div>
 </header>
 
-<!-- APOSTILAS -->
-<section>
-  <div class="wrap">
-    <h2>Tudo organizado para facilitar sua preparação de atividades</h2>
-    <article class="card featured"><div class="cover-wide"><img src="assets/capa-caderno-pratico.jpg" alt="Capa da apostila Caderno Prático" width="640" height="933" loading="lazy"></div><div class="featured-text"><h3>Caderno Prático</h3><p>Atividades de apoio ao desenvolvimento da escrita.</p></div></article>
-    <div class="cards">
-      <article class="card"><div class="cover"><img src="assets/capa-coordenacao-motora.jpg" alt="Capa da apostila Coordenação Motora" width="365" height="900" loading="lazy"></div><h3>Coordenação Motora</h3><p>Exercícios de traçado e controle motor fino.</p></article>
-      <article class="card"><div class="cover"><img src="assets/capa-silabario-cursivo.jpg" alt="Capa da apostila Silabário Cursivo" width="365" height="900" loading="lazy"></div><h3>Silabário Cursivo</h3><p>Material para praticar sílabas e escrita cursiva.</p></article>
-      <article class="card"><div class="cover"><img src="assets/capa-frases-cursivas.jpg" alt="Capa da apostila Frases Cursivas" width="365" height="900" loading="lazy"></div><h3>Frases Cursivas</h3><p>Exercícios para desenvolver a escrita de frases.</p></article>
-      <article class="card"><div class="cover"><img src="assets/capa-producao-de-frases.jpg" alt="Capa da apostila Produção de Frases" width="365" height="900" loading="lazy"></div><h3>Produção de Frases</h3><p>Atividades para praticar a construção e a expressão escrita.</p></article>
-    </div>
-  </div>
-</section>
-
-<!-- BENEFÍCIOS -->
+<!-- 2. QUEBRA DE OBJEÇÕES (o padrão mais forte da referência) -->
 <section class="alt">
   <div class="wrap">
-    <h2>Um material versátil para diferentes momentos da aprendizagem</h2>
-    <div class="benefits">
-      <div class="benefit"><span class="check">✓</span>Atividades organizadas em PDFs</div>
-      <div class="benefit"><span class="check">✓</span>Facilidade para imprimir e preparar exercícios</div>
-      <div class="benefit"><span class="check">✓</span>Prática de coordenação motora e traçado</div>
-      <div class="benefit"><span class="check">✓</span>Apoio ao desenvolvimento da escrita cursiva</div>
-      <div class="benefit"><span class="check">✓</span>Exercícios de sílabas, palavras e frases</div>
-      <div class="benefit"><span class="check">✓</span>Para alfabetização, reforço escolar e atividades em casa</div>
+    <span class="kicker">Antes que você pergunte</span>
+    <h2>As dúvidas que todo mundo tem</h2>
+    <p class="sub">Se alguma dessas passou pela sua cabeça, a resposta está aqui.</p>
+    <div class="objs">
+      <div class="obj"><q>Já acho atividade de graça na internet…</q><p>Acha, mas solta, sem sequência e depois de muito tempo procurando. Aqui está tudo organizado em etapas, num lugar só.</p></div>
+      <div class="obj"><q>Não sou professora, sou mãe.</q><p>Serve para as duas. É só imprimir e sentar com a criança, sem precisar de preparação.</p></div>
+      <div class="obj"><q>Não tenho tempo para montar atividade.</q><p>Você não monta nada. As páginas já vêm prontas para imprimir.</p></div>
+      <div class="obj"><q>Vou receber algo pelos Correios?</q><p>Não. É tudo em PDF, enviado para o seu e-mail logo após a confirmação do pagamento.</p></div>
+      <div class="obj"><q>Posso imprimir mais de uma vez?</q><p>Pode, quantas vezes precisar, para uso próprio, em sala ou em casa.</p></div>
+      <div class="obj"><q>E se eu não gostar?</q><p>Você tem 7 dias de garantia. Se não for para você, devolvemos o valor.</p></div>
     </div>
   </div>
 </section>
 
-<!-- POR DENTRO -->
+<!-- 3. PARA QUEM É -->
 <section>
-  <div class="wrap inside">
-    <h2>Veja o material por dentro</h2>
-    <div class="frame">
-      <img src="https://screenshot-to-spark-2000.lovable.app/assets/combo-mockup-C4wPHCyx.jpg" alt="Prévia do material" loading="lazy" width="800" height="800">
-      <div class="badge">Vídeo demonstrativo em breve</div>
-    </div>
-    <a href="#oferta" class="btn">QUERO ACESSAR AS 5 APOSTILAS</a>
-  </div>
-</section>
-
-<!-- OFERTA -->
-<section class="alt" id="oferta">
   <div class="wrap">
-    <h2>Garanta o seu Combo EducaPrática</h2>
-    <div class="offer">
-      <ul>
-        <li>Caderno Prático</li>
-        <li>Coordenação Motora</li>
-        <li>Silabário Cursivo</li>
-        <li>Frases Cursivas</li>
-        <li>Produção de Frases</li>
-        <li>Mais de 300 atividades, conforme o conteúdo disponibilizado</li>
-      </ul>
-      <p class="center muted">Receba seus materiais digitais em PDF e tenha mais recursos para preparar atividades de alfabetização e escrita.</p>
-      <div class="big">R$ 9,90</div>
-
-      <div class="bumps">
-        <h3>Complementos opcionais</h3>
-        <p class="small">Cada item é opcional e cobrado à parte. Nada é adicionado sem você marcar.</p>
-
-        <label class="bump">
-          <div class="bump-head"><span><input type="checkbox" data-name="Kit de Jogos de Alfabetização" data-price="7.90">Kit de Jogos de Alfabetização + R$ 7,90</span><span class="tag">Em breve</span></div>
-          <p><strong>SIM!</strong> Quero adicionar o Kit de Jogos de Alfabetização por R$ 7,90 e complementar meu material com atividades interativas para imprimir.</p>
-          <p class="desc">Jogos de formação de palavras, cartelas de sílabas, bingo de letras e desafios de leitura para imprimir. · Compra opcional.</p>
-        </label>
-
-        <label class="bump">
-          <div class="bump-head"><span><input type="checkbox" data-name="Planner da Professora" data-price="5.90">Planner da Professora + R$ 5,90</span><span class="tag">Em breve</span></div>
-          <p><strong>SIM!</strong> Quero adicionar o Planner da Professora por R$ 5,90 e organizar minha rotina pedagógica.</p>
-          <p class="desc">Planejamento semanal, organização de atividades, listas de materiais e registros da rotina pedagógica. · Compra opcional.</p>
-        </label>
-
-        <label class="bump">
-          <div class="bump-head"><span><input type="checkbox" data-name="Kit de Acompanhamento da Alfabetização" data-price="7.90">Kit de Acompanhamento da Alfabetização + R$ 7,90</span><span class="tag">Em breve</span></div>
-          <p><strong>SIM!</strong> Quero adicionar o Kit de Acompanhamento da Alfabetização por R$ 7,90 e registrar a evolução de cada criança.</p>
-          <p class="desc">Fichas de observação de reconhecimento de letras, leitura de sílabas, escrita de palavras e construção de frases. · Compra opcional.</p>
-        </label>
-
-        <label class="bump">
-          <div class="bump-head"><span><input type="checkbox" data-name="Kit de Datas Comemorativas" data-price="6.90">Kit de Datas Comemorativas + R$ 6,90</span><span class="tag">Em breve</span></div>
-          <p><strong>SIM!</strong> Quero adicionar o Kit de Datas Comemorativas por R$ 6,90 e ter atividades temáticas prontas.</p>
-          <p class="desc">Atividades temáticas para imprimir, desenhos e exercícios de escrita relacionados às datas contempladas no material. · Compra opcional.</p>
-        </label>
-
-        <label class="bump">
-          <div class="bump-head"><span><input type="checkbox" data-name="Cartazes e Recursos Visuais" data-price="5.90">Cartazes e Recursos Visuais + R$ 5,90</span><span class="tag">Em breve</span></div>
-          <p><strong>SIM!</strong> Quero adicionar o Cartazes e Recursos Visuais por R$ 5,90 e deixar a sala com recursos de apoio à leitura.</p>
-          <p class="desc">Alfabeto ilustrado, famílias silábicas, cartazes e recursos de apoio à leitura. · Compra opcional.</p>
-        </label>
-      </div>
-
-      <div class="summary">
-        <h3>Resumo do pedido</h3>
-        <div id="items"><div class="row"><span>Combo EducaPrática</span><span>R$ 9,90</span></div></div>
-        <div class="row total"><span>Total</span><span id="total">R$ 9,90</span></div>
-      </div>
-
-      <!-- Troque o href pelo link do seu checkout (Kiwify, Hotmart, Cakto etc.) -->
-      <a href="#" id="checkout" class="btn block">QUERO MEU COMBO</a>
-      <p class="foot-note">Produto digital · Arquivos em PDF</p>
+    <span class="kicker">Para quem é</span>
+    <h2>Feito para quem acompanha a alfabetização de perto</h2>
+    <p class="sub">Um material só, que funciona na escola, no reforço e em casa.</p>
+    <div class="chips">
+      <span class="chip">👩‍🏫 Professoras</span>
+      <span class="chip">👨‍👩‍👧 Mães e pais</span>
+      <span class="chip">📖 Reforço escolar</span>
+      <span class="chip">🧠 Psicopedagogas</span>
+      <span class="chip">🏫 Escolas e creches</span>
+      <span class="chip">🏠 Educação em casa</span>
     </div>
   </div>
 </section>
 
-<!-- FAQ -->
+<!-- 4. O PRODUTO COMO TRILHA (diferencial frente a atividade solta) -->
+<section class="alt">
+  <div class="wrap">
+    <span class="kicker">O que você recebe</span>
+    <h2>Uma trilha de alfabetização em etapas</h2>
+    <p class="sub">Cada apostila prepara a próxima. A criança avança do traçado até escrever as próprias frases.</p>
+    <div class="trail">
+      <article class="step"><img src="assets/capa-coordenacao-motora.jpg" alt="Capa Coordenação Motora" width="365" height="900" loading="lazy"><h3>Coordenação Motora</h3><p>Traçado e controle motor fino, a base de tudo.</p></article>
+      <article class="step"><img src="assets/capa-silabario-cursivo.jpg" alt="Capa Silabário Cursivo" width="365" height="900" loading="lazy"><h3>Silabário Cursivo</h3><p>Sílabas e escrita cursiva.</p></article>
+      <article class="step"><img src="assets/capa-frases-cursivas.jpg" alt="Capa Frases Cursivas" width="365" height="900" loading="lazy"><h3>Frases Cursivas</h3><p>Da sílaba para a frase completa.</p></article>
+      <article class="step"><img src="assets/capa-producao-de-frases.jpg" alt="Capa Produção de Frases" width="365" height="900" loading="lazy"><h3>Produção de Frases</h3><p>Construção e expressão escrita.</p></article>
+    </div>
+    <div class="support">
+      <img src="assets/capa-caderno-pratico.jpg" alt="Capa Caderno Prático" width="640" height="933" loading="lazy">
+      <div><span class="tag">APOIO EM TODAS AS ETAPAS</span><h3>Caderno Prático</h3><p>Atividades de apoio ao desenvolvimento da escrita, para usar junto com qualquer etapa da trilha.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. ANCORAGEM DE VALOR (conta real, sem promessa) -->
+<section>
+  <div class="wrap">
+    <span class="kicker">Faça as contas</span>
+    <h2>Menos que o preço de uma folha impressa</h2>
+    <p class="sub">Dividindo o combo básico pelas atividades:</p>
+    <div class="math">
+      <div><b>R$ 9,90</b><span>pagamento único</span></div>
+      <div><b>300+</b><span>atividades prontas</span></div>
+      <div><b>R$ 0,03</b><span>por atividade</span></div>
+    </div>
+    <p class="note">E você imprime quantas vezes quiser, sem pagar de novo.</p>
+  </div>
+</section>
+
+<!-- 6. COMPARAÇÃO -->
+<section class="alt">
+  <div class="wrap">
+    <h2>Procurar atividade solta <span class="hl">ou</span> ter tudo pronto?</h2>
+    <p class="sub">A diferença aparece na sua semana.</p>
+    <div class="vs">
+      <div class="bad"><h3>Do jeito de sempre</h3><ul>
+        <li>Horas pesquisando em sites e grupos</li>
+        <li>Atividades soltas, sem sequência</li>
+        <li>Qualidade e formato diferentes a cada página</li>
+        <li>Refazer a busca toda semana</li>
+      </ul></div>
+      <div class="good"><h3>Com o Combo EducaPrática</h3><ul>
+        <li>300+ atividades num lugar só</li>
+        <li>Trilha em etapas, do traçado às frases</li>
+        <li>Mesmo padrão visual em todas as apostilas</li>
+        <li>Imprimir e usar no mesmo dia</li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. OFERTA EM 2 PLANOS (âncora + upgrade) -->
+<section id="planos">
+  <div class="wrap">
+    <span class="kicker">Escolha seu combo</span>
+    <h2>Comece hoje mesmo</h2>
+    <p class="sub">Pagamento único, sem mensalidade. Acesso imediato no seu e-mail.</p>
+
+    <div class="plans">
+      <div class="plan">
+        <div class="name">COMBO BÁSICO</div>
+        <div class="price">R$ 9,90</div>
+        <div class="once">pagamento único</div>
+        <ul>
+          <li>As 5 apostilas da trilha</li>
+          <li>Mais de 300 atividades</li>
+          <li>Arquivos em PDF para imprimir</li>
+          <li>Acesso imediato por e-mail</li>
+          <li class="off">Kit de Jogos de Alfabetização</li>
+          <li class="off">Kit de Acompanhamento</li>
+          <li class="off">Planner da Professora</li>
+          <li class="off">Kit de Datas Comemorativas</li>
+          <li class="off">Cartazes e Recursos Visuais</li>
+        </ul>
+        <!-- Troque o href pelo link do checkout do Combo Básico -->
+        <a href="#" class="btn ghost block" data-plan="basico">QUERO O BÁSICO</a>
+        <div class="plan-trust"><span>🔒 Compra segura</span><span>⚡ Acesso imediato</span></div>
+      </div>
+
+      <div class="plan best">
+        <div class="ribbon">⭐ MAIS COMPLETO</div>
+        <div class="name">COMBO COMPLETO</div>
+        <div class="price">R$ 19,90</div>
+        <div class="once">pagamento único</div>
+        <span class="save">Separados sairiam por R$ 44,40</span>
+        <ul>
+          <li>As 5 apostilas da trilha</li>
+          <li>Mais de 300 atividades</li>
+          <li>Arquivos em PDF para imprimir</li>
+          <li>Acesso imediato por e-mail</li>
+          <li class="extra">Kit de Jogos de Alfabetização<small>Formação de palavras, cartelas de sílabas, bingo de letras</small></li>
+          <li class="extra">Kit de Acompanhamento da Alfabetização<small>Fichas para registrar a evolução de cada criança</small></li>
+          <li class="extra">Planner da Professora<small>Planejamento semanal e rotina pedagógica</small></li>
+          <li class="extra">Kit de Datas Comemorativas<small>Atividades temáticas prontas</small></li>
+          <li class="extra">Cartazes e Recursos Visuais<small>Alfabeto ilustrado e famílias silábicas</small></li>
+        </ul>
+        <!-- Troque o href pelo link do checkout do Combo Completo -->
+        <a href="#" class="btn block" data-plan="completo">QUERO O COMPLETO →</a>
+        <div class="plan-trust"><span>🔒 Compra segura</span><span>⚡ Acesso imediato</span></div>
+      </div>
+    </div>
+
+    <div class="guarantee">
+      <div class="seal"><b>7</b><small>DIAS</small></div>
+      <div><h3>Garantia incondicional de 7 dias</h3><p>Acesse, imprima e veja o material. Se não for para você, é só pedir dentro de 7 dias e devolvemos seu dinheiro.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. COMO FUNCIONA -->
+<section class="alt">
+  <div class="wrap">
+    <span class="kicker">Simples assim</span>
+    <h2>Como você recebe</h2>
+    <p class="sub">Do pagamento à primeira folha impressa em poucos minutos.</p>
+    <div class="how">
+      <div><div class="n">1</div><h3>Escolha seu combo</h3><p>Pague por PIX ou cartão.</p></div>
+      <div><div class="n">2</div><h3>Receba no e-mail</h3><p>O acesso chega logo após a confirmação do pagamento.</p></div>
+      <div><div class="n">3</div><h3>Imprima e use</h3><p>Em sala, no reforço ou em casa, quantas vezes precisar.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 9. FAQ -->
 <section>
   <div class="wrap faq">
-    <h2>Perguntas frequentes</h2>
-    <details><summary>Como recebo o material?</summary><p>Após a confirmação do pagamento, você recebe o acesso aos arquivos em PDF no e-mail informado na compra.</p></details>
+    <span class="kicker">Dúvidas</span>
+    <h2>Ainda ficou alguma pergunta?</h2>
+    <p class="sub"></p>
+    <details><summary>Qual combo devo escolher?</summary><p>O Básico tem as 5 apostilas completas. O Completo inclui também jogos, fichas de acompanhamento, planner, datas comemorativas e cartazes, por R$ 10 a mais. Se você trabalha com turma ou reforço, o Completo costuma valer mais a pena.</p></details>
+    <details><summary>Como recebo o material?</summary><p>Por e-mail, logo após a confirmação do pagamento. Se não encontrar, confira a caixa de spam e a aba Promoções.</p></details>
     <details><summary>Preciso receber algum produto físico?</summary><p>Não. Todo o material é digital, em PDF. Nada é enviado pelos Correios.</p></details>
-    <details><summary>Posso imprimir as atividades?</summary><p>Sim. Os arquivos foram pensados para impressão, quantas vezes precisar, para uso próprio, em sala ou em casa.</p></details>
-    <details><summary>O que são os materiais adicionais?</summary><p>São complementos opcionais, cobrados à parte. Eles só entram no pedido se você marcar a opção correspondente.</p></details>
+    <details><summary>Posso imprimir as atividades mais de uma vez?</summary><p>Sim, quantas vezes precisar, para uso próprio, em sala de aula ou em casa.</p></details>
+    <details><summary>Tem mensalidade?</summary><p>Não. É pagamento único.</p></details>
     <details><summary>Os materiais garantem que a criança será alfabetizada?</summary><p>Não. O combo é um recurso de apoio à prática. O resultado depende do acompanhamento, da frequência de uso e do ritmo de cada criança.</p></details>
+  </div>
+</section>
+
+<!-- 10. CTA FINAL -->
+<section class="final">
+  <div class="wrap">
+    <h2>Sua próxima semana de atividades já pode estar pronta</h2>
+    <p class="sub">300+ atividades em 5 apostilas organizadas, a partir de R$ 9,90.</p>
+    <a href="#planos" class="btn">QUERO MEU COMBO AGORA</a>
+    <div class="trust"><span>Pagamento único</span><span>Acesso imediato</span><span>Garantia de 7 dias</span></div>
   </div>
 </section>
 
@@ -275,30 +417,29 @@
       <a href="#">Termos de compra e uso (em breve)</a>
       <a href="#">Política de reembolso (em breve)</a>
     </div>
-    <div style="margin-top:10px">Entrega digital: arquivos PDF após confirmação do pagamento</div>
+    <p class="legal">Produto 100% digital. Após a compra, os arquivos em PDF são enviados ao e-mail informado. Nenhum item físico é enviado. As imagens das capas são ilustrativas.</p>
   </div>
 </footer>
 
+<div class="sticky" id="sticky">
+  <div class="p">A partir de<b>R$ 9,90</b></div>
+  <a href="#planos" class="btn">VER COMBOS</a>
+</div>
+
 <script>
-  const BASE = 9.90;
-  const fmt = v => "R$ " + v.toFixed(2).replace(".", ",");
-  const boxes = document.querySelectorAll('.bump input[type="checkbox"]');
-  const items = document.getElementById("items");
-  const total = document.getElementById("total");
-  function update(){
-    let sum = BASE;
-    let html = '<div class="row"><span>Combo EducaPrática</span><span>' + fmt(BASE) + '</span></div>';
-    boxes.forEach(b => {
-      if (b.checked){
-        const p = parseFloat(b.dataset.price);
-        sum += p;
-        html += '<div class="row"><span>' + b.dataset.name + '</span><span>' + fmt(p) + '</span></div>';
-      }
-    });
-    items.innerHTML = html;
-    total.textContent = fmt(sum);
-  }
-  boxes.forEach(b => b.addEventListener("change", update));
+  // CTA fixo no celular: aparece depois do hero e some na área de planos
+  (function(){
+    var bar=document.getElementById('sticky');
+    var hero=document.querySelector('.hero');
+    var plans=document.getElementById('planos');
+    function upd(){
+      var pastHero=hero.getBoundingClientRect().bottom<0;
+      var r=plans.getBoundingClientRect();
+      var inPlans=r.top<window.innerHeight && r.bottom>0;
+      bar.classList.toggle('show',pastHero && !inPlans);
+    }
+    window.addEventListener('scroll',upd,{passive:true}); upd();
+  })();
 </script>
 </body>
 </html>
