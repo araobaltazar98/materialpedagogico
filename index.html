@@ -50,6 +50,9 @@
   .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
   .preview{aspect-ratio:3/4;border-radius:12px;background:repeating-linear-gradient(45deg,#f7efe0,#f7efe0 10px,#fbf5ea 10px,#fbf5ea 20px);display:flex;align-items:center;justify-content:center;text-align:center;color:var(--muted);font-size:.85rem;font-weight:700;padding:12px;margin-bottom:14px}
   .card p{color:var(--muted);font-size:.95rem;margin-top:4px}
+  .cover{aspect-ratio:73/180;border-radius:12px;margin-bottom:14px;overflow:hidden;box-shadow:0 6px 16px rgba(31,42,55,.12)}
+  .cover img{width:100%;height:100%;object-fit:cover}
+  .card .preview{aspect-ratio:73/180}
 
   /* Benefícios */
   .alt{background:var(--surface)}
@@ -104,6 +107,12 @@
     section{padding:48px 0}
     .offer{padding:22px}
   }
+  @media (max-width:560px){
+    .cards{grid-template-columns:repeat(2,1fr);gap:12px}
+    .card{padding:10px}
+    .card h3{font-size:1rem}
+    .card p{font-size:.85rem}
+  }
 </style>
 </head>
 <body>
@@ -136,11 +145,11 @@
   <div class="wrap">
     <h2>Tudo organizado para facilitar sua preparação de atividades</h2>
     <div class="cards">
-      <article class="card"><div class="preview">Prévia do material em breve</div><h3>Caderno Prático</h3><p>Atividades de apoio ao desenvolvimento da escrita.</p></article>
-      <article class="card"><div class="preview">Prévia do material em breve</div><h3>Coordenação Motora</h3><p>Exercícios de traçado e controle motor fino.</p></article>
-      <article class="card"><div class="preview">Prévia do material em breve</div><h3>Silabário Cursivo</h3><p>Material para praticar sílabas e escrita cursiva.</p></article>
-      <article class="card"><div class="preview">Prévia do material em breve</div><h3>Frases Cursivas</h3><p>Exercícios para desenvolver a escrita de frases.</p></article>
-      <article class="card"><div class="preview">Prévia do material em breve</div><h3>Produção de Frases</h3><p>Atividades para praticar a construção e a expressão escrita.</p></article>
+      <article class="card"><div class="preview">Capa em breve</div><h3>Caderno Prático</h3><p>Atividades de apoio ao desenvolvimento da escrita.</p></article>
+      <article class="card"><div class="cover"><img src="assets/capa-coordenacao-motora.jpg" alt="Capa da apostila Coordenação Motora" width="365" height="900" loading="lazy"></div><h3>Coordenação Motora</h3><p>Exercícios de traçado e controle motor fino.</p></article>
+      <article class="card"><div class="cover"><img src="assets/capa-silabario-cursivo.jpg" alt="Capa da apostila Silabário Cursivo" width="365" height="900" loading="lazy"></div><h3>Silabário Cursivo</h3><p>Material para praticar sílabas e escrita cursiva.</p></article>
+      <article class="card"><div class="cover"><img src="assets/capa-frases-cursivas.jpg" alt="Capa da apostila Frases Cursivas" width="365" height="900" loading="lazy"></div><h3>Frases Cursivas</h3><p>Exercícios para desenvolver a escrita de frases.</p></article>
+      <article class="card"><div class="cover"><img src="assets/capa-producao-de-frases.jpg" alt="Capa da apostila Produção de Frases" width="365" height="900" loading="lazy"></div><h3>Produção de Frases</h3><p>Atividades para praticar a construção e a expressão escrita.</p></article>
     </div>
   </div>
 </section>
