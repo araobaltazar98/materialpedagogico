@@ -35,7 +35,6 @@
   .sub{text-align:center;color:var(--muted);font-size:1.08rem;max-width:640px;margin:0 auto 40px}
   .alt{background:var(--surface)}
 
-  .demo-bar{background:var(--ink);color:#fff;text-align:center;font-size:.82rem;padding:7px 16px}
   .topbar{background:var(--accent);color:var(--ink);text-align:center;font-weight:900;font-size:.85rem;padding:9px 16px;letter-spacing:.02em}
 
   .btn{display:inline-block;background:var(--primary);color:#fff;text-decoration:none;font-weight:900;font-size:1.08rem;padding:19px 32px;border-radius:16px;border:0;cursor:pointer;box-shadow:0 7px 0 var(--primary-dark);transition:transform .12s,box-shadow .12s;text-align:center;line-height:1.2}
@@ -200,7 +199,6 @@
 </head>
 <body>
 
-<div class="demo-bar">Modo de demonstração — o checkout ainda não está conectado.</div>
 <div class="topbar">📚 5 APOSTILAS EM PDF · ACESSO IMEDIATO</div>
 
 <!-- 1. HERO: promessa + prova visual + preço + CTA -->
@@ -337,8 +335,8 @@
           <li class="off">Planner da Professora</li>
           <li class="off">Cartazes e Recursos Visuais</li>
         </ul>
-        <!-- Troque o href pelo link do checkout do plano Básico -->
-        <a href="#" class="btn ghost block" data-plan="basico">QUERO O BÁSICO</a>
+        <!-- Checkout Cakto: plano Básico -->
+        <a href="https://pay.cakto.com.br/a45bb8s_1249454" class="btn ghost block" data-plan="basico">QUERO O BÁSICO</a>
         <div class="plan-trust"><span>🔒 Compra segura</span><span>⚡ Acesso imediato</span></div>
       </div>
 
@@ -358,8 +356,8 @@
           <li class="off">Planner da Professora</li>
           <li class="off">Cartazes e Recursos Visuais</li>
         </ul>
-        <!-- Troque o href pelo link do checkout do plano Intermediário -->
-        <a href="#" class="btn ghost block" data-plan="intermediario">QUERO O INTERMEDIÁRIO</a>
+        <!-- Checkout Cakto: plano Intermediário -->
+        <a href="https://pay.cakto.com.br/337rx9a_1250023" class="btn ghost block" data-plan="intermediario">QUERO O INTERMEDIÁRIO</a>
         <div class="plan-trust"><span>🔒 Compra segura</span><span>⚡ Acesso imediato</span></div>
       </div>
 
@@ -380,8 +378,8 @@
           <li class="extra">Planner da Professora<small>Planejamento semanal e rotina pedagógica</small></li>
           <li class="extra">Cartazes e Recursos Visuais<small>Alfabeto ilustrado e famílias silábicas</small></li>
         </ul>
-        <!-- Troque o href pelo link do checkout do plano Premium -->
-        <a href="#" class="btn block" data-plan="premium">QUERO O PREMIUM →</a>
+        <!-- Checkout Cakto: plano Premium -->
+        <a href="https://pay.cakto.com.br/662gv9k_1250071" class="btn block" data-plan="premium">QUERO O PREMIUM →</a>
         <div class="plan-trust"><span>🔒 Compra segura</span><span>⚡ Acesso imediato</span></div>
       </div>
     </div>
@@ -463,6 +461,14 @@
       bar.classList.toggle('show',pastHero && !inPlans);
     }
     window.addEventListener('scroll',upd,{passive:true}); upd();
+  })();
+  // Repassa UTMs, fbclid etc. da URL da página para o checkout (atribuição de campanha)
+  (function(){
+    var q=window.location.search.slice(1);
+    if(!q) return;
+    document.querySelectorAll('a[data-plan]').forEach(function(a){
+      a.href+= (a.href.indexOf('?')>-1?'&':'?')+q;
+    });
   })();
 </script>
 </body>
