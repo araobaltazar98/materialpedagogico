@@ -52,6 +52,12 @@
   .card p{color:var(--muted);font-size:.95rem;margin-top:4px}
   .cover{aspect-ratio:73/180;border-radius:12px;margin-bottom:14px;overflow:hidden;box-shadow:0 6px 16px rgba(31,42,55,.12)}
   .cover img{width:100%;height:100%;object-fit:cover}
+  .featured{display:grid;grid-template-columns:240px 1fr;gap:28px;align-items:center;max-width:720px;margin:0 auto 22px}
+  .featured h3{font-size:1.4rem}
+  .featured p{font-size:1.05rem}
+  .cover-wide{border-radius:12px;overflow:hidden;box-shadow:0 6px 16px rgba(31,42,55,.12)}
+  .cover-wide img{width:100%;height:auto}
+  .cards{grid-template-columns:repeat(4,1fr)!important}
   .card .preview{aspect-ratio:73/180}
 
   /* Benefícios */
@@ -108,7 +114,10 @@
     .offer{padding:22px}
   }
   @media (max-width:560px){
-    .cards{grid-template-columns:repeat(2,1fr);gap:12px}
+    .cards{grid-template-columns:repeat(2,1fr)!important;gap:12px}
+    .featured{grid-template-columns:1fr;gap:12px;text-align:center}
+    .featured h3{font-size:1.15rem}
+    .featured p{font-size:.95rem}
     .card{padding:10px}
     .card h3{font-size:1rem}
     .card p{font-size:.85rem}
@@ -144,8 +153,8 @@
 <section>
   <div class="wrap">
     <h2>Tudo organizado para facilitar sua preparação de atividades</h2>
+    <article class="card featured"><div class="cover-wide"><img src="assets/capa-caderno-pratico.jpg" alt="Capa da apostila Caderno Prático" width="640" height="933" loading="lazy"></div><div class="featured-text"><h3>Caderno Prático</h3><p>Atividades de apoio ao desenvolvimento da escrita.</p></div></article>
     <div class="cards">
-      <article class="card"><div class="preview">Capa em breve</div><h3>Caderno Prático</h3><p>Atividades de apoio ao desenvolvimento da escrita.</p></article>
       <article class="card"><div class="cover"><img src="assets/capa-coordenacao-motora.jpg" alt="Capa da apostila Coordenação Motora" width="365" height="900" loading="lazy"></div><h3>Coordenação Motora</h3><p>Exercícios de traçado e controle motor fino.</p></article>
       <article class="card"><div class="cover"><img src="assets/capa-silabario-cursivo.jpg" alt="Capa da apostila Silabário Cursivo" width="365" height="900" loading="lazy"></div><h3>Silabário Cursivo</h3><p>Material para praticar sílabas e escrita cursiva.</p></article>
       <article class="card"><div class="cover"><img src="assets/capa-frases-cursivas.jpg" alt="Capa da apostila Frases Cursivas" width="365" height="900" loading="lazy"></div><h3>Frases Cursivas</h3><p>Exercícios para desenvolver a escrita de frases.</p></article>
